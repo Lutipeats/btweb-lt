@@ -414,6 +414,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   #HEADER
 \*-----------------------------------*/
 
+
 .header-top,
 .header-user-actions,
 .desktop-navigation-menu { display: none; }
