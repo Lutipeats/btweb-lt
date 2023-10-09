@@ -87,7 +87,18 @@ for (let i = 0; i < accordionBtn.length; i++) {
 
 }
 
+$(document).ready(function(){
+  $('.slider').slick({
+    autoplay: true, // Tự động chuyển slide
+    arrows: true, // Hiển thị các nút điều hướng
+    dots: true, // Hiển thị các điểm chuyển đổi
+    prevArrow: '<button class="slick-prev">Previous</button>',
+    nextArrow: '<button class="slick-next">Next</button>'
+  });
+});
+  
 //cart
+      
 
 
 

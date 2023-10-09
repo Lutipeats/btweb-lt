@@ -122,6 +122,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 
 
 
+
 /*-----------------------------------*\
   #REUSED STYLE
 \*-----------------------------------*/
@@ -640,9 +641,111 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 }
 
 
+/* 404 */
+
+.error_form h1 {
+	font-size: 200px;
+	font-weight: 900;
+	color: var(--salmon-pink);
+	letter-spacing: 10px;
+	line-height: 1.1;
+	margin: 0 0 15px;
+}
+.error_form {
+	text-align: center;
+}
+.error_form h2 {
+	color: #666666;
+	font-size: 35px;
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 40px;
+	margin-bottom: 25px;
+}
+.error_form p {
+	font-size: 22px;
+	color: #8c8c8c;
+	font-weight: 400;
+	line-height: 30px;
+	margin-bottom: 30px;
+}
+.error_form form {
+	width: 420px;
+	margin: 0 auto;
+  position: relative;
+}
+.error_section input {
+  height: 50px;
+	border-radius: 30px;
+	padding: 0 30px;
+	background: none;
+	border: 1px solid #ddd;
+}
+.error_form button {
+	position: absolute;
+	right: 15px;
+	height: 100%;
+	border: none;
+	background: no-repeat;
+	font-size: 20px;
+	color: #00bba6;
+	cursor: pointer;
+	-webkit-transition: .3s;
+	transition: .3s;
+	top: 0;
+}
+.error_form button:hover{
+    color: var(--white);
+}
+.error_form a:hover{
+    background: var(--onyx);
+    color: var(--salmon-pink);
+}
+.error_form a {
+	color: #fff;
+	display: inline-block;
+	background: var(--salmon-pink);
+	border-radius: 35px;
+	font-size: 12px;
+	font-weight: bold;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 30px;
+	text-transform: uppercase;
+	margin-top: 40px;
+}
+.error_section {
+	padding: 54px 20px 100px;
+}
+/*404 page css end*/
 
 
 
+/* CART */
+
+.breadcrumb_content ul li {
+	display: inline-block;
+	padding-right: 15px;
+	font-size: 14px;
+	font-weight: bold;
+	color: var(--salmon-pink);
+	text-transform: capitalize;
+	line-height: 15px;
+}
+.breadcrumb_content ul li a {
+	color: #222;
+}
+.breadcrumb_content ul li a:hover{
+    color: #e84c3d;
+}
+.breadcrumb_content ul {
+	line-height: 48px;
+}
+/* 7. cart page css here */
+.shopping_cart_area {
+	padding-top: 35px;
+	padding: 35px 20px 0;
+}
 /*-----------------------------------*\
   #BANNER
 \*-----------------------------------*/
