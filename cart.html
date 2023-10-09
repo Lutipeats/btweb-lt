@@ -20,14 +20,15 @@
   <!--
     - google font link
   -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
 
 </head>
+
 <body>
-    <!--
+  <!--
     - HEADER
   -->
 
@@ -139,329 +140,443 @@
       </div>
 
     </div>
+  </header>
 
-<!-- cart
+    <!-- cart
  -->
- <div class="container">
-  <div class="breadcrumbs_area">
-    <div class="row">
-        <div class="col-12">
+    <div class="container">
+      <div class="breadcrumbs_area">
+        <div class="row">
+          <div class="col-12">
             <div class="breadcrumb_content">
-                <ul>
-                    <li><a href="index.html">home</a></li>
-                    <li><ion-icon name="chevron-forward-outline"></ion-icon></li>
-                    <li>Shopping Cart</li>
-                </ul>
-  
+              <ul>
+                <li><a href="index.html">home</a></li>
+                <li><ion-icon name="chevron-forward-outline"></ion-icon></li>
+                <li>Shopping Cart</li>
+              </ul>
+
             </div>
+          </div>
         </div>
+      </div>
+                <div class="shopping_cart_area">
+                  <form action="#"> 
+                          <div class="row">
+                              <div class="col-12">
+                                  <div class="table_desc">
+                                      <div class="cart_page table-responsive">
+                                          <table>
+                                      <thead>
+                                          <tr>
+                                              <th class="product_remove">Delete</th>
+                                              <th class="product_thumb">Image</th>
+                                              <th class="product_name">Product</th>
+                                              <th class="product-price">Price</th>
+                                              <th class="product_quantity">Quantity</th>
+                                              <th class="product_total">Total</th>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                          <tr>
+                                            <td class="product_remove"><a href="#"><ion-icon name="trash-bin-outline"></ion-icon></i></a></td>
+                                              <td class="product_thumb"><a href="#"><img src="./assets/images/products/2.jpg"></a></td>
+                                              <td class="product_name"><a href="#">Wind Jackets</a></td>
+                                              <td class="product-price">65.00$</td>
+                                              <td class="product_quantity"><input min="0" max="100" value="1" type="number"></td>
+                                              <td class="product_total">130.00$</td>
+
+
+                                          </tr>
+
+                                          <tr>
+                                            <td class="product_remove"><a href="#"><ion-icon name="trash-bin-outline"></ion-icon></a></td>
+                                              <td class="product_thumb"><a href="#"><img src="./assets/images/products/4.jpg" alt=""></a></td>
+                                              <td class="product_name"><a href="#">Woolen Hat For Men</a></td>
+                                              <td class="product-price">90.00$</td>
+                                              <td class="product_quantity"><input min="0" max="100" value="1" type="number"></td>
+                                              <td class="product_total">180.00$</td>
+
+
+                                          </tr>
+                                          <tr>
+                                            <td class="product_remove"><a href="#"><ion-icon name="trash-bin-outline"></ion-icon></a></td>
+                                              <td class="product_thumb"><a href="#"><img src="./assets/images/products/1.jpg" alt=""></a></td>
+                                              <td class="product_name"><a href="#">Baby Fabric Shoes</a></td>
+                                              <td class="product-price">80.00$</td>
+                                              <td class="product_quantity"><input min="0" max="100" value="1" type="number"></td>
+                                              <td class="product_total">160.00$</td>
+
+
+                                          </tr>
+
+                                      </tbody>
+                                  </table>   
+                                      </div>  
+                                      <div class="cart_submit">
+                                          <button type="submit">update cart</button>
+                                      </div>      
+                                  </div>
+                              </div>
+                          </div>
+                          <!--coupon code area start-->
+                          <div class="coupon_area">
+                              <div class="row">
+                                  <div class="col-lg-6 col-md-6">
+                                      <div class="coupon_code">
+                                          <h3>Coupon</h3>
+                                          <div class="coupon_inner">   
+                                              <p>Enter your coupon code if you have one.</p>                                
+                                              <input placeholder="Coupon code" type="text">
+                                              <button type="submit">Apply coupon</button>
+                                          </div>    
+                                      </div>
+                                  </div>
+                                  <div class="col-lg-6 col-md-6">
+                                      <div class="coupon_code">
+                                          <h3>Cart Totals</h3>
+                                          <div class="coupon_inner">
+                                            <div class="cart_subtotal">
+                                                <p>Subtotal</p>
+                                                <p class="cart_amount">£215.00</p>
+                                            </div>
+                                            <div class="cart_subtotal ">
+                                                <p>Shipping</p>
+                                                <p class="cart_amount"><span>Flat Rate:</span> £255.00</p>
+                                            </div>
+                                            <a href="#">Calculate shipping</a>
+
+                                            <div class="cart_subtotal">
+                                                <p>Total</p>
+                                                <p class="cart_amount">£215.00</p>
+                                            </div>
+                                            <div class="checkout_btn">
+                                                <a href="#">Proceed to Checkout</a>
+                                            </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <!--coupon code area end-->
+                      </form> 
+              </div>
+              <!--shopping cart area end -->
+
+            </div>
+          <!--pos page inner end-->
+          </div>
+        </div>
+<!--pos page end-->
+
     </div>
   </div>
-  
- </div>
- 
+</div>
+    </div>
 
 
-<!--
+
+
+    <!--
     - FOOTER
   -->
 
-  <footer>
+    <footer>
 
-    <div class="footer-category">
+      <div class="footer-category">
 
-      <div class="container">
+        <div class="container">
 
-        <h2 class="footer-category-title">Brand directory</h2>
+          <h2 class="footer-category-title">Brand directory</h2>
 
-        <div class="footer-category-box">
+          <div class="footer-category-box">
 
-          <h3 class="category-box-title">Fashion :</h3>
+            <h3 class="category-box-title">Fashion :</h3>
 
-          <a href="#" class="footer-category-link">T-shirt</a>
-          <a href="#" class="footer-category-link">Shirts</a>
-          <a href="#" class="footer-category-link">shorts & jeans</a>
-          <a href="#" class="footer-category-link">jacket</a>
-          <a href="#" class="footer-category-link">dress & frock</a>
-          <a href="#" class="footer-category-link">innerwear</a>
-          <a href="#" class="footer-category-link">hosiery</a>
+            <a href="#" class="footer-category-link">T-shirt</a>
+            <a href="#" class="footer-category-link">Shirts</a>
+            <a href="#" class="footer-category-link">shorts & jeans</a>
+            <a href="#" class="footer-category-link">jacket</a>
+            <a href="#" class="footer-category-link">dress & frock</a>
+            <a href="#" class="footer-category-link">innerwear</a>
+            <a href="#" class="footer-category-link">hosiery</a>
 
-        </div>
+          </div>
 
-        <div class="footer-category-box">
-          <h3 class="category-box-title">footwear :</h3>
-        
-          <a href="#" class="footer-category-link">sport</a>
-          <a href="#" class="footer-category-link">formal</a>
-          <a href="#" class="footer-category-link">Boots</a>
-          <a href="#" class="footer-category-link">casual</a>
-          <a href="#" class="footer-category-link">cowboy shoes</a>
-          <a href="#" class="footer-category-link">safety shoes</a>
-          <a href="#" class="footer-category-link">Party wear shoes</a>
-          <a href="#" class="footer-category-link">Branded</a>
-          <a href="#" class="footer-category-link">Firstcopy</a>
-          <a href="#" class="footer-category-link">Long shoes</a>
-        </div>
+          <div class="footer-category-box">
+            <h3 class="category-box-title">footwear :</h3>
 
-        <div class="footer-category-box">
-          <h3 class="category-box-title">jewellery :</h3>
-        
-          <a href="#" class="footer-category-link">Necklace</a>
-          <a href="#" class="footer-category-link">Earrings</a>
-          <a href="#" class="footer-category-link">Couple rings</a>
-          <a href="#" class="footer-category-link">Pendants</a>
-          <a href="#" class="footer-category-link">Crystal</a>
-          <a href="#" class="footer-category-link">Bangles</a>
-          <a href="#" class="footer-category-link">bracelets</a>
-          <a href="#" class="footer-category-link">nosepin</a>
-          <a href="#" class="footer-category-link">chain</a>
-          <a href="#" class="footer-category-link">Earrings</a>
-          <a href="#" class="footer-category-link">Couple rings</a>
-        </div>
+            <a href="#" class="footer-category-link">sport</a>
+            <a href="#" class="footer-category-link">formal</a>
+            <a href="#" class="footer-category-link">Boots</a>
+            <a href="#" class="footer-category-link">casual</a>
+            <a href="#" class="footer-category-link">cowboy shoes</a>
+            <a href="#" class="footer-category-link">safety shoes</a>
+            <a href="#" class="footer-category-link">Party wear shoes</a>
+            <a href="#" class="footer-category-link">Branded</a>
+            <a href="#" class="footer-category-link">Firstcopy</a>
+            <a href="#" class="footer-category-link">Long shoes</a>
+          </div>
 
-        <div class="footer-category-box">
-          <h3 class="category-box-title">cosmetics :</h3>
-        
-          <a href="#" class="footer-category-link">Shampoo</a>
-          <a href="#" class="footer-category-link">Bodywash</a>
-          <a href="#" class="footer-category-link">Facewash</a>
-          <a href="#" class="footer-category-link">makeup kit</a>
-          <a href="#" class="footer-category-link">liner</a>
-          <a href="#" class="footer-category-link">lipstick</a>
-          <a href="#" class="footer-category-link">prefume</a>
-          <a href="#" class="footer-category-link">Body soap</a>
-          <a href="#" class="footer-category-link">scrub</a>
-          <a href="#" class="footer-category-link">hair gel</a>
-          <a href="#" class="footer-category-link">hair colors</a>
-          <a href="#" class="footer-category-link">hair dye</a>
-          <a href="#" class="footer-category-link">sunscreen</a>
-          <a href="#" class="footer-category-link">skin loson</a>
-          <a href="#" class="footer-category-link">liner</a>
-          <a href="#" class="footer-category-link">lipstick</a>
+          <div class="footer-category-box">
+            <h3 class="category-box-title">jewellery :</h3>
+
+            <a href="#" class="footer-category-link">Necklace</a>
+            <a href="#" class="footer-category-link">Earrings</a>
+            <a href="#" class="footer-category-link">Couple rings</a>
+            <a href="#" class="footer-category-link">Pendants</a>
+            <a href="#" class="footer-category-link">Crystal</a>
+            <a href="#" class="footer-category-link">Bangles</a>
+            <a href="#" class="footer-category-link">bracelets</a>
+            <a href="#" class="footer-category-link">nosepin</a>
+            <a href="#" class="footer-category-link">chain</a>
+            <a href="#" class="footer-category-link">Earrings</a>
+            <a href="#" class="footer-category-link">Couple rings</a>
+          </div>
+
+          <div class="footer-category-box">
+            <h3 class="category-box-title">cosmetics :</h3>
+
+            <a href="#" class="footer-category-link">Shampoo</a>
+            <a href="#" class="footer-category-link">Bodywash</a>
+            <a href="#" class="footer-category-link">Facewash</a>
+            <a href="#" class="footer-category-link">makeup kit</a>
+            <a href="#" class="footer-category-link">liner</a>
+            <a href="#" class="footer-category-link">lipstick</a>
+            <a href="#" class="footer-category-link">prefume</a>
+            <a href="#" class="footer-category-link">Body soap</a>
+            <a href="#" class="footer-category-link">scrub</a>
+            <a href="#" class="footer-category-link">hair gel</a>
+            <a href="#" class="footer-category-link">hair colors</a>
+            <a href="#" class="footer-category-link">hair dye</a>
+            <a href="#" class="footer-category-link">sunscreen</a>
+            <a href="#" class="footer-category-link">skin loson</a>
+            <a href="#" class="footer-category-link">liner</a>
+            <a href="#" class="footer-category-link">lipstick</a>
+          </div>
+
         </div>
 
       </div>
 
-    </div>
+      <div class="footer-nav">
 
-    <div class="footer-nav">
+        <div class="container">
 
-      <div class="container">
+          <ul class="footer-nav-list">
 
-        <ul class="footer-nav-list">
+            <li class="footer-nav-item">
+              <h2 class="nav-title">Popular Categories</h2>
+            </li>
 
-          <li class="footer-nav-item">
-            <h2 class="nav-title">Popular Categories</h2>
-          </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Fashion</a>
+            </li>
 
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Fashion</a>
-          </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Electronic</a>
+            </li>
 
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Electronic</a>
-          </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Cosmetic</a>
+            </li>
 
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Cosmetic</a>
-          </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Health</a>
+            </li>
 
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Health</a>
-          </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Watches</a>
+            </li>
 
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Watches</a>
-          </li>
+          </ul>
 
-        </ul>
+          <ul class="footer-nav-list">
 
-        <ul class="footer-nav-list">
-        
-          <li class="footer-nav-item">
-            <h2 class="nav-title">Products</h2>
-          </li>
-        
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Prices drop</a>
-          </li>
-        
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">New products</a>
-          </li>
-        
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Best sales</a>
-          </li>
-        
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Contact us</a>
-          </li>
-        
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Sitemap</a>
-          </li>
-        
-        </ul>
+            <li class="footer-nav-item">
+              <h2 class="nav-title">Products</h2>
+            </li>
 
-        <ul class="footer-nav-list">
-        
-          <li class="footer-nav-item">
-            <h2 class="nav-title">Our Company</h2>
-          </li>
-        
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Delivery</a>
-          </li>
-        
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Legal Notice</a>
-          </li>
-        
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Terms and conditions</a>
-          </li>
-        
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">About us</a>
-          </li>
-        
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Secure payment</a>
-          </li>
-        
-        </ul>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Prices drop</a>
+            </li>
 
-        <ul class="footer-nav-list">
-        
-          <li class="footer-nav-item">
-            <h2 class="nav-title">Services</h2>
-          </li>
-        
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Prices drop</a>
-          </li>
-        
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">New products</a>
-          </li>
-        
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Best sales</a>
-          </li>
-        
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Contact us</a>
-          </li>
-        
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Sitemap</a>
-          </li>
-        
-        </ul>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">New products</a>
+            </li>
 
-        <ul class="footer-nav-list">
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Best sales</a>
+            </li>
 
-          <li class="footer-nav-item">
-            <h2 class="nav-title">Contact</h2>
-          </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Contact us</a>
+            </li>
 
-          <li class="footer-nav-item flex">
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Sitemap</a>
+            </li>
 
-            <address class="content">
-              419 State 414 Rte
-              Beaver Dams, New York(NY), 14812, USA
-            </address>
-          </li>
+          </ul>
 
-          <li class="footer-nav-item flex">
-            <div class="icon-box">
-              <ion-icon name="call-outline"></ion-icon>
-            </div>
+          <ul class="footer-nav-list">
 
-            <a href="tel:+607936-8058" class="footer-nav-link">(607) 936-8058</a>
-          </li>
+            <li class="footer-nav-item">
+              <h2 class="nav-title">Our Company</h2>
+            </li>
 
-          <li class="footer-nav-item flex">
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Delivery</a>
+            </li>
 
-            <a href="mailto:example@gmail.com" class="footer-nav-link">example@gmail.com</a>
-          </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Legal Notice</a>
+            </li>
 
-        </ul>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Terms and conditions</a>
+            </li>
 
-        <ul class="footer-nav-list">
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">About us</a>
+            </li>
 
-          <li class="footer-nav-item">
-            <h2 class="nav-title">Follow Us</h2>
-          </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Secure payment</a>
+            </li>
 
-          <li>
-            <ul class="social-link">
+          </ul>
 
-              <li class="footer-nav-item">
-                <a href="#" class="footer-nav-link">
-                  <ion-icon name="logo-facebook"></ion-icon>
-                </a>
-              </li>
+          <ul class="footer-nav-list">
 
-              <li class="footer-nav-item">
-                <a href="#" class="footer-nav-link">
-                  <ion-icon name="logo-twitter"></ion-icon>
-                </a>
-              </li>
+            <li class="footer-nav-item">
+              <h2 class="nav-title">Services</h2>
+            </li>
 
-              <li class="footer-nav-item">
-                <a href="#" class="footer-nav-link">
-                  <ion-icon name="logo-linkedin"></ion-icon>
-                </a>
-              </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Prices drop</a>
+            </li>
 
-              <li class="footer-nav-item">
-                <a href="#" class="footer-nav-link">
-                  <ion-icon name="logo-instagram"></ion-icon>
-                </a>
-              </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">New products</a>
+            </li>
 
-            </ul>
-          </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Best sales</a>
+            </li>
 
-        </ul>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Contact us</a>
+            </li>
 
-      </div>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Sitemap</a>
+            </li>
 
-    </div>
+          </ul>
 
-    <div class="footer-bottom">
+          <ul class="footer-nav-list">
 
-      <div class="container">
+            <li class="footer-nav-item">
+              <h2 class="nav-title">Contact</h2>
+            </li>
 
-        <img src="./assets/images/payment.png" alt="payment method" class="payment-img">
+            <li class="footer-nav-item flex">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
 
-        <p class="copyright">
-          Copyright &copy; <a href="#">Anon</a> all rights reserved.
-        </p>
+              <address class="content">
+                419 State 414 Rte
+                Beaver Dams, New York(NY), 14812, USA
+              </address>
+            </li>
+
+            <li class="footer-nav-item flex">
+              <div class="icon-box">
+                <ion-icon name="call-outline"></ion-icon>
+              </div>
+
+              <a href="tel:+607936-8058" class="footer-nav-link">(607) 936-8058</a>
+            </li>
+
+            <li class="footer-nav-item flex">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <a href="mailto:example@gmail.com" class="footer-nav-link">example@gmail.com</a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-nav-list">
+
+            <li class="footer-nav-item">
+              <h2 class="nav-title">Follow Us</h2>
+            </li>
+
+            <li>
+              <ul class="social-link">
+
+                <li class="footer-nav-item">
+                  <a href="#" class="footer-nav-link">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+
+                <li class="footer-nav-item">
+                  <a href="#" class="footer-nav-link">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+
+                <li class="footer-nav-item">
+                  <a href="#" class="footer-nav-link">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                </li>
+
+                <li class="footer-nav-item">
+                  <a href="#" class="footer-nav-link">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
+
+              </ul>
+            </li>
+
+          </ul>
+
+        </div>
 
       </div>
 
-    </div>
+      <div class="footer-bottom">
 
-  </footer>
-  <!--
+        <div class="container">
+
+          <img src="./assets/images/payment.png" alt="payment method" class="payment-img">
+
+          <p class="copyright">
+            Copyright &copy; <a href="#">Anon</a> all rights reserved.
+          </p>
+
+        </div>
+
+      </div>
+
+    </footer>
+    <!--
     - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 
-  <!--
+    <!--
     - ionicon link
   -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-  </body>
-  </html>
+</body>
+
+</html>
