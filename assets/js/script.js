@@ -87,7 +87,8 @@ for (let i = 0; i < accordionBtn.length; i++) {
 
 }
 
-// slide item 
+//cart
+
 
 
 // categories
