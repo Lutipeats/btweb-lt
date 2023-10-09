@@ -657,6 +657,8 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   border-radius: var(--border-radius-md);
   overflow: hidden;
   scroll-snap-align: start;
+  flex: 0 0 100%;
+  transition: transform 0.5s ease;
 }
 
 .slider-item .banner-img {

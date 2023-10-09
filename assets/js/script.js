@@ -86,3 +86,47 @@ for (let i = 0; i < accordionBtn.length; i++) {
   });
 
 }
+
+// slide item 
+
+
+// categories
+const dropdownPanel = document.querySelector('.dropdown-panel');
+
+        // Thêm danh mục và nội dung liên quan
+        function addCategory(title, items, bannerSrc) {
+            const categoryList = document.createElement('ul');
+            categoryList.classList.add('dropdown-panel-list');
+
+            // Thêm tiêu đề danh mục
+            const titleItem = document.createElement('li');
+            titleItem.classList.add('menu-title');
+            titleItem.innerHTML = `<a href="#">${title}</a>`;
+            categoryList.appendChild(titleItem);
+
+            // Thêm các mục
+            items.forEach(item => {
+                const listItem = document.createElement('li');
+                listItem.classList.add('panel-list-item');
+                listItem.innerHTML = `<a href="#">${item}</a>`;
+                categoryList.appendChild(listItem);
+            });
+
+            // Thêm banner nếu có
+            if (bannerSrc) {
+                const bannerItem = document.createElement('li');
+                bannerItem.classList.add('panel-list-item');
+                bannerItem.innerHTML = `<a href="#"><img src="${bannerSrc}" alt="${title}" width="250" height="119"></a>`;
+                categoryList.appendChild(bannerItem);
+            }
+
+            dropdownPanel.appendChild(categoryList);
+        }
+
+        // Thêm danh mục và nội dung liên quan
+        addCategory("Electronics", ["Desktop", "Laptop", "Camera", "Tablet", "Headphone"], "./assets/images/electronics-banner-1.jpg");
+        addCategory("Men's", ["Formal", "Casual", "Sports", "Jacket", "Sunglasses"], "./assets/images/mens-banner.jpg");
+        addCategory("Women's", ["Formal", "Casual", "Perfume", "Cosmetics", "Bags"], "./assets/images/womens-banner.jpg");
+        addCategory("Electronics", ["Smart Watch", "Smart TV", "Keyboard", "Mouse", "Microphone"], "./assets/images/electronics-banner-2.jpg");
+
+// footer
