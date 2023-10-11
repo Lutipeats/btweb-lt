@@ -127,7 +127,11 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   #REUSED STYLE
 \*-----------------------------------*/
 
-.container { padding: 0 15px; }
+.container { 
+  padding: 0 15px;
+  max-width: 114rem;
+  margin: 0 auto;
+  padding: 0 3rem; }
 
 .has-scrollbar { padding-bottom: 5px; }
 
@@ -640,6 +644,67 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   border-radius: var(--border-radius-md);
 }
 
+/* shop */
+.btn-success
+{
+    background-color: var(--salmon-pink);
+    border-color: var(--salmon-pink);
+}
+.btn-success:hover{
+	background-color: var(--onyx);
+	border-color: var(--onyx);
+	color: var(--salmon-pink);
+}
+.blog-sidebar-list:hover
+{
+  color: var(--salmon-pink);
+  cursor: pointer;
+}
+
+
+.btn-dark{
+	background-color:var(--salmon-pink);
+	border-color: var(--salmon-pink);
+	color: #fff;
+	font-family: 'Kanit',sans-serif;
+	font-size: 16px;
+	font-weight: 900;
+
+}
+
+.btn-dark:hover{
+	background-color: var(--onyx);
+	border-color: var(--onyx);
+	color: var(--salmon-pink);
+	font-family: 'Kanit',sans-serif;
+	font-size: 16px;
+	font-weight: 900;
+    cursor: pointer;
+}
+
+
+.list-icon{
+
+	color: var(--salmon-pink);
+
+}
+
+
+.product-sidebar-list{
+	color:var(--);
+}
+
+.product-sidebar-list:hover{
+	color: var(--salmon-pink);
+    cursor: pointer;
+}
+
+.product-image{
+	width: 200px;
+	height: 200px;
+}
+
+
 
 /* 404 */
 
@@ -837,13 +902,23 @@ padding: 10px 20px 25px;
 color: #999;
 font-size: 13px;
 margin-bottom: 20px;
+
 }
 .coupon_inner input {
 border: 1px solid #e5e5e5;
 height: 42px;
 background: none;
 margin-bottom: 20px;
+/* border: none; */
+/* outline: none;   */
+width: 100%; 
+box-sizing: border-box;
 }
+.coupon_inner input::placeholder
+{
+  padding-right: 20px;
+}
+
 .cart_subtotal {
 display: -webkit-box;
 display: -ms-flexbox;
